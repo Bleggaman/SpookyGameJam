@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterScript : UnitScript {
+public class CharacterScript : MonoBehaviour, iScarable {
 
 	public bool qPressed = false;
 	public ScareEquipItem[] equipItems = new ScareEquipItem[3];
@@ -67,4 +67,10 @@ public class CharacterScript : UnitScript {
 	}
 
 
+	#region iScarable implementation
+	public void scare (int scarePower)
+	{
+		Debug.Log ("eek : " + scarePower);
+	}
+	#endregion
 }

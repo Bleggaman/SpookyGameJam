@@ -10,11 +10,28 @@ public static class Utils {
 	public static iNode findiNode(GameObject ghost, WorldInfo worldInfo){
 
 		return worldInfo.iNodes [0];
-			
-
 	}
 
-	public static iNode findHidingSpotNode(GameObject ghost, WorldInfo worldInfo){
+	public static iNode findiNodeFromHint(GameObject ghost, WorldInfo worldInfo){
+
+		return worldInfo.iNodes [0];
+	}
+
+	public static iNode findCloseHiding(GameObject ghost, WorldInfo worldInfo){
+
+		return worldInfo.iNodes
+			.Where (asdf => asdf is iHidingSpot)
+			.FirstOrDefault ();
+	}
+
+	public static iNode findFarHiding(GameObject ghost, WorldInfo worldInfo){
+
+		return worldInfo.iNodes
+			.Where (asdf => asdf is iHidingSpot)
+			.FirstOrDefault ();
+	}
+
+	public static iNode findHidingFromHint(GameObject ghost, WorldInfo worldInfo, Vector3 hintLocation){
 
 		return worldInfo.iNodes
 			.Where (asdf => asdf is iHidingSpot)

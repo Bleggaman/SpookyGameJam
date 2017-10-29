@@ -210,12 +210,18 @@ MonoBehaviour:
   hiding: 0
   playerSeen: 0
   rb: {fileID: 0}
-  transparency: 0
+  transparency: 1
   rend: {fileID: 23290244027469580}
   fleePeriod: 5
   animPeriod: 3
   reactionPeriod: 0.5
   alertPeriod: 10
+  player: {fileID: 0}
+  playerScript: {fileID: 0}
+  fastReact: 0.1
+  slowReact: 0.3
+  playerAlertTime: 0.4
+  isHiding: 0
 --- !u!136 &136214900121155582
 CapsuleCollider:
   m_ObjectHideFlags: 1
