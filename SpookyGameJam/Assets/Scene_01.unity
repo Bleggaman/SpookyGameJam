@@ -651,6 +651,11 @@ Prefab:
       propertyPath: equipItems.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 136006658897860938, guid: f9df0e0018da548aa843fe004d7db49b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9df0e0018da548aa843fe004d7db49b, type: 2}
   m_IsPrefabParent: 0

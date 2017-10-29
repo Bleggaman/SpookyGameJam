@@ -9,7 +9,9 @@ public static class Utils {
 	//FIND: not already on a iNode, identifying iNode to go to
 	public static iNode findiNode(GameObject ghost, WorldInfo worldInfo){
 
-		return worldInfo.iNodes [0];
+		List<iNode> nodesList = new List<iNode> ();
+		int number = (int)Random.Range (2, worldInfo.iNodes.Count);
+		return worldInfo.iNodes[number - 1];
 	}
 
 	public static iNode findiNodeFromHint(GameObject ghost, WorldInfo worldInfo){
@@ -19,9 +21,15 @@ public static class Utils {
 
 	public static iNode findCloseHiding(GameObject ghost, WorldInfo worldInfo){
 
-		return worldInfo.iNodes
-			.Where (asdf => asdf is iHidingSpot)
-			.FirstOrDefault ();
+		List<iNode> hidingList = new List<iNode> ();
+
+		foreach (iNode node in worldInfo.iNodes) {
+			if (node is iHidingSpot) {
+				hidingList.Add (node);
+			}
+		}
+		int number = (int)Random.Range (2, hidingList.Count);
+		return hidingList[number -1 ];
 	}
 
 	public static iNode findFarHiding(GameObject ghost, WorldInfo worldInfo){
@@ -37,7 +45,7 @@ public static class Utils {
 			.Where (asdf => asdf is iHidingSpot)
 			.FirstOrDefault ();
 	}
-
+		
 	//GET: on an iNode, choosing next iNode
 	public static iNode getFirstiNode(iNode node){
 
