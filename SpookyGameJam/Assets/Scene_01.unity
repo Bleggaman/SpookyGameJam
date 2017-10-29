@@ -107,7 +107,51 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 2649ccc5a4eca49a6870afc871ea9d64, type: 2}
+--- !u!1 &158318587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 158318589}
+  - component: {fileID: 158318588}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &158318588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158318587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10f7fb685f135e46bf094b422bef91d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 1690101223}
+  player: {fileID: 369711699}
+  nodeParent: {fileID: 0}
+  nodeList: []
+--- !u!4 &158318589
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158318587}
+  m_LocalRotation: {x: -0.0017764968, y: 0.9060979, z: -0.4230473, w: -0.003804982}
+  m_LocalPosition: {x: -0.625777, y: 18.229485, z: 16.00887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161691467
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +235,48 @@ Transform:
   m_Father: {fileID: 1687329775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &187388945
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549351549899570, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9f90250f340cb415b999e0b844460f20, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &193985449
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +547,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scareValue: 1
-  nodeList: []
   activateRange: 5
   wellUp: 0
   bucketPrefab: {fileID: 114107850131334526, guid: 4c88baea4d53f4c53ac0a6f1ff24470c,
@@ -569,6 +654,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9df0e0018da548aa843fe004d7db49b, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &369711699 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4260898640443528, guid: f9df0e0018da548aa843fe004d7db49b,
+    type: 2}
+  m_PrefabInternal: {fileID: 369711698}
 --- !u!4 &395159475 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4471286761453588, guid: 413bc6993915944c4ab5888dd12f0147,
@@ -842,7 +932,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &692649973
 MeshRenderer:
@@ -962,8 +1052,8 @@ GameObject:
   m_Name: Cube Prop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &883302805
 MeshRenderer:
@@ -1260,8 +1350,8 @@ GameObject:
   m_Name: Cube Prop (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1233372826
 MeshRenderer:
@@ -1939,6 +2029,7 @@ GameObject:
   - component: {fileID: 1690101221}
   - component: {fileID: 1690101220}
   - component: {fileID: 1690101219}
+  - component: {fileID: 1690101224}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2016,6 +2107,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 76.83, y: 0, z: 0}
+--- !u!114 &1690101224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690101218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f74b15e11244ff8aa6524b543f90c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodesParent: {fileID: 0}
 --- !u!4 &1695679036 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4471286761453588, guid: 413bc6993915944c4ab5888dd12f0147,
@@ -2108,7 +2211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scareValue: 1
-  nodeList: []
   activateRange: 2
 --- !u!23 &1844548827
 MeshRenderer:
@@ -2712,7 +2814,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scareValue: 1
-  nodeList: []
   activateRange: 2
 --- !u!23 &2116051286
 MeshRenderer:

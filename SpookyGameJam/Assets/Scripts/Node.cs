@@ -16,4 +16,8 @@ public class Node : MonoBehaviour, iNode {
 
 	}
 
+	public GameObject getGameObject ()
+	{
+		return gameObject;
+	}
 }

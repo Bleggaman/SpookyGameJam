@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\CharacterScript.cs" />
      <Compile Include="Assets\Scripts\FlashLight.cs" />
      <Compile Include="Assets\Scripts\ghostMove.cs" />
+     <Compile Include="Assets\Scripts\GhostMovement.cs" />
      <Compile Include="Assets\Scripts\HidingSpot.cs" />
      <Compile Include="Assets\Scripts\iActivate.cs" />
      <Compile Include="Assets\Scripts\iHidingSpot.cs" />
@@ -75,6 +76,14 @@
      <Compile Include="Assets\Scripts\UnitScript.cs" />
      <Compile Include="Assets\Scripts\Utils.cs" />
      <Compile Include="Assets\Scripts\Well.cs" />
+     <Compile Include="Assets\Scripts\WorldInfo.cs" />
+     <Compile Include="Assets\Terrel\Assets\Script\CameraController.cs" />
+     <Compile Include="Assets\Terrel\Assets\Script\GameManager.cs" />
+     <Compile Include="Assets\Terrel\Assets\Script\GhostMove.cs" />
+     <Compile Include="Assets\Terrel\Assets\Script\LockSpriteRotation.cs" />
+     <Compile Include="Assets\Terrel\Assets\Script\movementNode.cs" />
+     <Compile Include="Assets\Terrel\Assets\Script\NavGhostMove.cs" />
+     <Compile Include="Assets\Terrel\Assets\Script\PlayerMove.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
