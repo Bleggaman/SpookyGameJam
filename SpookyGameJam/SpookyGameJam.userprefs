@@ -1,1 +1,17 @@
-﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj" />
+﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RegularScare.cs">
+    <Files>
+      <File FileName="Assets/Scripts/iHidingSpot.cs" Line="9" Column="1" />
+      <File FileName="Assets/Scripts/HidingSpot.cs" Line="16" Column="2" />
+      <File FileName="Assets/Scripts/ghostMove.cs" Line="46" Column="1" />
+      <File FileName="Assets/Scripts/UnitScript.cs" Line="18" Column="3" />
+      <File FileName="Assets/Scripts/FlashLight.cs" Line="13" Column="8" />
+      <File FileName="Assets/Scripts/RegularScare.cs" Line="54" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

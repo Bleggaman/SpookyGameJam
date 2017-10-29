@@ -10,6 +10,8 @@ public class Bucket : ScareEquipItem, iActivate {
 	public bool bucketSpilled;
 	public bool scaredReceived;
 
+	CharacterScript characterScriptRef;
+
 	public Bucket(GameObject unit){
 		_unit = unit;
 		 
@@ -19,6 +21,7 @@ public class Bucket : ScareEquipItem, iActivate {
 	void Start () {
 		mesh = GetComponent<MeshRenderer> ();
 		mesh.enabled = false;
+		characterScriptRef = GameObject.Find ("Player").GetComponent<CharacterScript> ();
 
 	}
 
@@ -55,6 +58,7 @@ public class Bucket : ScareEquipItem, iActivate {
 		yield return new WaitForSeconds (2);
 		bucketSpilling = false;
 		mesh.enabled = false;
-		GameObject.Destroy (this);
+
+		characterScriptRef.equipItems [0] = characterScriptRef.regularRef;
 	}
 }

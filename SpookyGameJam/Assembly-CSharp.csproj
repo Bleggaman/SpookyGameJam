@@ -65,12 +65,15 @@
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\playerMovement.cs" />
      <Compile Include="Assets\Scripts\playerMovement2.cs" />
+     <Compile Include="Assets\Scripts\RegularScare.cs" />
      <Compile Include="Assets\Scripts\ScareEquipItem.cs" />
      <Compile Include="Assets\Scripts\ScareMapObject.cs" />
      <Compile Include="Assets\Scripts\ScareProp.cs" />
+     <Compile Include="Assets\Scripts\ScaryMask.cs" />
      <Compile Include="Assets\Scripts\ScaryTree.cs" />
      <Compile Include="Assets\Scripts\Twigs.cs" />
      <Compile Include="Assets\Scripts\UnitScript.cs" />
+     <Compile Include="Assets\Scripts\Utils.cs" />
      <Compile Include="Assets\Scripts\Well.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

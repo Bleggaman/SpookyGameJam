@@ -113,10 +113,14 @@ MonoBehaviour:
   scaredLevel: 4
   qPressed: 0
   equipItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 114616659442374020, guid: fc7eef2c4a28a4da98eb9f9abea28598, type: 2}
+  - {fileID: 114751439440673398, guid: 4651653a014f647d9b3f80701049e144, type: 2}
+  - {fileID: 114344767535885088, guid: 15aed8ddd00ea4589bebb3f927b55b32, type: 2}
   flashLightPrefab: {fileID: 114751439440673398, guid: 4651653a014f647d9b3f80701049e144,
+    type: 2}
+  scaryMaskPrefab: {fileID: 114344767535885088, guid: 15aed8ddd00ea4589bebb3f927b55b32,
+    type: 2}
+  regularScarePrefab: {fileID: 114616659442374020, guid: fc7eef2c4a28a4da98eb9f9abea28598,
     type: 2}
 --- !u!114 &114599925785179728
 MonoBehaviour:

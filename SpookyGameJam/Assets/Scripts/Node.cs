@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Node : MonoBehaviour, iNode {
 
-	public List<Node> nodeLinks = new List<Node>(); 
+
 	public float waitTime;
+	public List<iNode> nodeLinks = new List<iNode>(); 
 
 
-
-	public Node nextNode(){
+	public List<iNode> getNodes(){
 
 		//gets a node
-		return nodeLinks [0];
+		return nodeLinks;
 
 	}
 

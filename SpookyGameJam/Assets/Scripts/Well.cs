@@ -38,14 +38,10 @@ public class Well : ScareMapObject, iActivate, iHidingSpot, iScare  {
 
 		if (wellRisen && !bucketTaken) {
 			CharacterScript charScript = sender.GetComponent<CharacterScript> ();
-			for (int i = 0; i < charScript.equipItems.Length; i++) {
-				if (charScript.equipItems [i] == null && !bucketTaken) {
-					ScareEquipItem bucket = Instantiate (bucketPrefab, transform.position, transform.rotation);
-					bucket.GetComponent<ScareEquipItem> ()._unit = sender;
-					charScript.equipItems [i] = bucket;
-					bucketTaken = true;
-				}
-			}
+			ScareEquipItem bucket = Instantiate (bucketPrefab, transform.position, transform.rotation);
+			bucket.GetComponent<ScareEquipItem> ()._unit = sender;
+			charScript.equipItems [0] = bucket;
+			bucketTaken = true;
 		}
 	}
 

@@ -7,12 +7,27 @@ public class CharacterScript : UnitScript {
 	public bool qPressed = false;
 	public ScareEquipItem[] equipItems = new ScareEquipItem[3];
 	public ScareEquipItem flashLightPrefab;
+	public ScareEquipItem scaryMaskPrefab;
+	public ScareEquipItem regularScarePrefab;
+
+	public ScareEquipItem regularRef;
 
 	// Use this for initialization
 	void Start () {
+
+		ScareEquipItem regular = Instantiate (regularScarePrefab, transform.position, transform.rotation);
+		regularScarePrefab.GetComponent<ScareEquipItem> ()._unit = gameObject;
+		equipItems [0] = regular;
+		regularRef = regular;
+
 		ScareEquipItem flash = Instantiate (flashLightPrefab, transform.position, transform.rotation);
 		flashLightPrefab.GetComponent<ScareEquipItem> ()._unit = gameObject;
-		equipItems [0] = flash;
+		equipItems [1] = flash;
+
+		ScareEquipItem mask = Instantiate (scaryMaskPrefab, transform.position, transform.rotation);
+		scaryMaskPrefab.GetComponent<ScareEquipItem> ()._unit = gameObject;
+		equipItems [2] = mask;
+
 	}
 	
 	// Update is called once per frame
