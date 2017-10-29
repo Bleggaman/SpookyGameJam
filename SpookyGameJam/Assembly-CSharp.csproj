@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{11CCC3AD-F3CF-909D-6544-1C51D3068FFF}</ProjectGuid>
+    <ProjectGuid>{9D9EE29C-AFD1-B28E-961F-0C090B9A2468}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,23 +51,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CharacterScript.cs" />
-     <Compile Include="Assets\FlashLight.cs" />
-     <Compile Include="Assets\ghostMove.cs" />
-     <Compile Include="Assets\iActivate.cs" />
-     <Compile Include="Assets\iHidingSpot.cs" />
-     <Compile Include="Assets\iNode.cs" />
-     <Compile Include="Assets\iScare.cs" />
-     <Compile Include="Assets\Lamp.cs" />
-     <Compile Include="Assets\Node.cs" />
-     <Compile Include="Assets\playerMovement.cs" />
-     <Compile Include="Assets\playerMovement2.cs" />
-     <Compile Include="Assets\ScareEquipItem.cs" />
-     <Compile Include="Assets\ScareMapObject.cs" />
-     <Compile Include="Assets\ScareProp.cs" />
-     <Compile Include="Assets\Tree.cs" />
-     <Compile Include="Assets\UnitScript.cs" />
-     <Compile Include="Assets\worldScript.cs" />
+     <Compile Include="Assets\Leaves.cs" />
+     <Compile Include="Assets\Scripts\Bucket.cs" />
+     <Compile Include="Assets\Scripts\CharacterScript.cs" />
+     <Compile Include="Assets\Scripts\FlashLight.cs" />
+     <Compile Include="Assets\Scripts\ghostMove.cs" />
+     <Compile Include="Assets\Scripts\HidingSpot.cs" />
+     <Compile Include="Assets\Scripts\iActivate.cs" />
+     <Compile Include="Assets\Scripts\iHidingSpot.cs" />
+     <Compile Include="Assets\Scripts\iNode.cs" />
+     <Compile Include="Assets\Scripts\iScare.cs" />
+     <Compile Include="Assets\Scripts\Lamp.cs" />
+     <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\playerMovement.cs" />
+     <Compile Include="Assets\Scripts\playerMovement2.cs" />
+     <Compile Include="Assets\Scripts\ScareEquipItem.cs" />
+     <Compile Include="Assets\Scripts\ScareMapObject.cs" />
+     <Compile Include="Assets\Scripts\ScareProp.cs" />
+     <Compile Include="Assets\Scripts\ScaryTree.cs" />
+     <Compile Include="Assets\Scripts\UnitScript.cs" />
+     <Compile Include="Assets\Scripts\Well.cs" />
+     <Compile Include="Assets\Twigs.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
