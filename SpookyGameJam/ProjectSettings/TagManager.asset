@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ghost
   - MapScareObject
+  - sprite_controller
   layers:
   - Default
   - TransparentFX
