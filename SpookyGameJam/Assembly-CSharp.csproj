@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CharacterScript.cs" />
      <Compile Include="Assets\Scripts\FlashLight.cs" />
+     <Compile Include="Assets\Scripts\GhostMovement.cs" />
      <Compile Include="Assets\Scripts\HidingSpot.cs" />
      <Compile Include="Assets\Scripts\IdleSprites.cs" />
      <Compile Include="Assets\Scripts\Lamp.cs" />
@@ -68,10 +69,12 @@
      <Compile Include="Assets\Scripts\UnitScript.cs" />
      <Compile Include="Assets\Scripts\Utils.cs" />
      <Compile Include="Assets\Scripts\Well.cs" />
+     <Compile Include="Assets\Scripts\WorldInfo.cs" />
      <Compile Include="Assets\Scripts\ghostMove.cs" />
      <Compile Include="Assets\Scripts\iActivate.cs" />
      <Compile Include="Assets\Scripts\iHidingSpot.cs" />
      <Compile Include="Assets\Scripts\iNode.cs" />
+     <Compile Include="Assets\Scripts\iScarable.cs" />
      <Compile Include="Assets\Scripts\iScare.cs" />
      <Compile Include="Assets\Scripts\playerMovement.cs" />
      <Compile Include="Assets\Scripts\playerMovement2.cs" />
